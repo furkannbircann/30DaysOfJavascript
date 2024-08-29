@@ -1,7 +1,7 @@
 /* Functions */
 // a function is a reusable block of code or programming statement designed to perform a certain task. A function is declared by a function key word followed by a name, followed by parentheses
 
-//a function can take parameters, which are values you supply to the function so that the function can perform its task. When you call a function that takes parameters, you specify the values to pass in the parentheses that follow the function name.
+// a function can take parameters, which are values you supply to the function so that the function can perform its task. When you call a function that takes parameters, you specify the values to pass in the parentheses that follow the function name.
 
 //a function can be declared or created in couple of ways
 //1. Declaration function
@@ -50,7 +50,7 @@ function functionWithParameter(param1,param2) {
     //code to be executed
 }
 
-functionWithParameter(param1,param2);
+//functionWithParameter(param1,param2);
 
 //function with many parameters
 

@@ -7,7 +7,7 @@ for (let i = 0; i < 5; i++) {
 
 // break statement
 // The break statement is used to exit a loop.
-for (let l = 0; l < 5; i++) {
+for (let l = 0; l < 5; l++) {
     if (l === 3) {
         break;
     }
