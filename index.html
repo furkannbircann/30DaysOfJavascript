@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>30 DAYS JAVASCRIPT</title>
 
     <script>
-        console.log('Internal Script (head)');
+      console.log("Internal Script (head)");
     </script>
-</head>
 
-<body>
+    <style>
+      body.mobile {
+        background-color: rgb(240, 240, 240);
+      }
+    </style>
+  </head>
+
+  <body>
     <button onclick="alert('Inline Script')">Click</button>
 
     <h1 class="title" id="first-title">First</h1>
@@ -19,19 +24,56 @@
     <h1 id="title">Title</h1>
     <h1 class="title" id="third-title">Third</h1>
 
-    <input type="color" id="color-picker">
+    <input type="color" id="color-picker" />
     <button id="btn">Button</button>
 
     <ul>
-        <li class="delete-btn">HTML</li>
-        <li class="delete-btn" data-id="2">CSS</li>
-        <li class="delete-btn">JavaScript</li>
+      <li class="delete-btn">HTML</li>
+      <li class="delete-btn" data-id="2">CSS</li>
+      <li class="delete-btn">JavaScript</li>
     </ul>
 
     <button disabled type="submit" id="disabled-submit">Disabled Submit</button>
 
+    <a href="https://www.google.com" id="link">Google</a>
+
+    <div class="test1">
+      test1
+      <div class="test2">
+        test2
+        <div class="test3">test3</div>
+      </div>
+    </div>
+
+    <input type="text" id="input" value="30 Days Of JavaScript" />
+
+    <br />
+
+    <textarea name="about" cols="30" rows="10" id="about">
+30 Days Of JavaScript</textarea
+    >
+
+    <br />
+
+    <button data-type="bold" class="action-btn">Bold</button>
+    <button data-type="italic" class="action-btn">Italic</button>
+    <button data-type="uppercase" class="action-btn">Uppercase</button>
+
+    <br />
+
+    <hr />
+
+    <input class="test" type="time" max="17:00" step="900" /> <br />
+    <input class="test" type="date" max="2019-12-25" step="7" /> <br />
+    <input class="test" type="month" max="2019-12" step="12" /> <br />
+    <input class="test" type="number" max="50" step="5" /> <br />
+    <input class="test" type="range" value="1" max="10" min="-4" />
+
+    <button id="decrement-button">DOWN</button>
+    <button id="increment-button">UP</button>
+
     <script>
-        console.log('Internal Script (body)');
+      console.log("Internal Script (body)");
     </script>
 
     <!-- <script src="./1/introduction.js"></script> -->
@@ -43,7 +85,7 @@
     <!-- <script src="./7/functions.js"></script> -->
     <!-- <script src="./8/objects.js"></script> -->
     <!-- <script src="./9/high-order-functions.js"></script> -->
-    <!-- <script src="./10/sets-and-maps.js"></script> --> 
+    <!-- <script src="./10/sets-and-maps.js"></script> -->
     <!-- <script src="./11/destructuring-and-spreading.js"></script> -->
     <!--<script src="./12/regular-expressions.js"></script> -->
     <!-- <script src="./13/console-methods.js"></script> -->
@@ -57,7 +99,7 @@
     <!-- <script src="./21/document-object-model.js"></script> -->
     <!-- <script src="./22/document-object-model-2.js"></script> -->
     <!-- <script src="./23/document-object-model-3.js"></script> -->
-    <script src="./24/attributes.js"></script>
-</body>
-
+    <!-- <script src="./24/attributes.js"></script> -->
+    <script src="./25/attributes-2.js"></script>
+  </body>
 </html>
