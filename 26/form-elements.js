@@ -170,11 +170,11 @@ The CustomEvent() method creates a new custom event.
 
 const tab = document.querySelector(".tab");
 const buttons = tab.querySelectorAll("nav button");
-const content = tab.querySelectorAll(".contents section");
+const contents = tab.querySelectorAll(".contents section");
 
 buttons[0].classList.add("active");
 
-[...content].slice(1).forEach((element) => {
+[...contents].slice(1).forEach((element) => {
   element.style.display = "none";
 } );
 
@@ -184,15 +184,15 @@ buttons.forEach((button, index) => {
       button.classList.remove("active");
     });
     button.classList.add("active");
-    content.forEach((element) => {
+    contents.forEach((element) => {
       element.style.display = "none";
     });
-    content[index].style.display = "block";
+    contents[index].style.display = "block";
 
     const event = new CustomEvent("tabChange", {
       detail: {
         index: index,
-        content: content[index],
+        content: contents[index],
       },
     });
 
