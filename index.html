@@ -1,105 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30 DAYS JAVASCRIPT</title>
 
-    <script>
-      console.log("Internal Script (head)");
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 DAYS JAVASCRIPT</title>
 
-    <style>
-      body.mobile {
-        background-color: rgb(240, 240, 240);
-      }
-    </style>
-  </head>
+  <script>
+    console.log("Internal Script (head)");
+  </script>
 
-  <body>
-    <button onclick="alert('Inline Script')">Click</button>
+  <style>
+    body.mobile {
+      background-color: rgb(240, 240, 240);
+    }
+    .active{
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+  </style>
+</head>
 
-    <h1 class="title" id="first-title">First</h1>
-    <h1 class="title" id="second-title">Second</h1>
-    <h1 id="title">Title</h1>
-    <h1 class="title" id="third-title">Third</h1>
+<body>
+  <button onclick="alert('Inline Script')">Click</button>
 
-    <input type="color" id="color-picker" />
-    <button id="btn">Button</button>
+  <h1 class="title" id="first-title">First</h1>
+  <h1 class="title" id="second-title">Second</h1>
+  <h1 id="title">Title</h1>
+  <h1 class="title" id="third-title">Third</h1>
 
-    <ul>
-      <li class="delete-btn">HTML</li>
-      <li class="delete-btn" data-id="2">CSS</li>
-      <li class="delete-btn">JavaScript</li>
-    </ul>
+  <input type="color" id="color-picker" />
+  <button id="btn">Button</button>
 
-    <button disabled type="submit" id="disabled-submit">Disabled Submit</button>
+  <ul>
+    <li class="delete-btn">HTML</li>
+    <li class="delete-btn" data-id="2">CSS</li>
+    <li class="delete-btn">JavaScript</li>
+  </ul>
 
-    <a href="https://www.google.com" id="link">Google</a>
+  <button disabled type="submit" id="disabled-submit">Disabled Submit</button>
 
-    <div class="test1">
-      test1
-      <div class="test2">
-        test2
-        <div class="test3">test3</div>
-      </div>
+  <a href="https://www.google.com" id="link">Google</a>
+
+  <div class="test1">
+    test1
+    <div class="test2">
+      test2
+      <div class="test3">test3</div>
     </div>
+  </div>
 
-    <input type="text" id="input" value="30 Days Of JavaScript" />
+  <input type="text" id="input" value="30 Days Of JavaScript" />
 
-    <br />
+  <br />
 
-    <textarea name="about" cols="30" rows="10" id="about">
-30 Days Of JavaScript</textarea
-    >
+  <textarea name="about" cols="30" rows="10" id="about">
+30 Days Of JavaScript</textarea>
 
-    <br />
+  <br />
 
-    <button data-type="bold" class="action-btn">Bold</button>
-    <button data-type="italic" class="action-btn">Italic</button>
-    <button data-type="uppercase" class="action-btn">Uppercase</button>
+  <button data-type="bold" class="action-btn">Bold</button>
+  <button data-type="italic" class="action-btn">Italic</button>
+  <button data-type="uppercase" class="action-btn">Uppercase</button>
 
-    <br />
+  <br />
 
-    <hr />
+  <hr />
 
-    <input class="test" type="time" max="17:00" step="900" /> <br />
-    <input class="test" type="date" max="2019-12-25" step="7" /> <br />
-    <input class="test" type="month" max="2019-12" step="12" /> <br />
-    <input class="test" type="number" max="50" step="5" /> <br />
-    <input class="test" type="range" value="1" max="10" min="-4" />
+  <input class="test" type="time" max="17:00" step="900" /> <br />
+  <input class="test" type="date" max="2019-12-25" step="7" /> <br />
+  <input class="test" type="month" max="2019-12" step="12" /> <br />
+  <input class="test" type="number" max="50" step="5" /> <br />
+  <input class="test" type="range" value="1" max="10" min="-4" />
 
-    <button id="decrement-button">DOWN</button>
-    <button id="increment-button">UP</button>
+  <button id="decrement-button">DOWN</button>
+  <button id="increment-button">UP</button>
 
-    <script>
-      console.log("Internal Script (body)");
-    </script>
+  <hr />
+  <form action="" id="form">
+    <input type="text" name="username" id="username" />
+    <input type="password" name="password" id="password" />
+    <input type="email" name="email" id="email" required />
+    <input id="submit-btn" type="button" value="Submit" />
+    <input id="reset-btn" type="button" value="Reset" />
+  </form>
 
-    <!-- <script src="./1/introduction.js"></script> -->
-    <!-- <script src="./2/data-types.js"></script> -->
-    <!-- <script src="./3/boolean-operators-date.js"></script> -->
-    <!-- <script src="./4/conditionals.js"></script> -->
-    <!-- <script src="./5/arrays.js"></script> -->
-    <!-- <script src="./6/loops.js"></script> -->
-    <!-- <script src="./7/functions.js"></script> -->
-    <!-- <script src="./8/objects.js"></script> -->
-    <!-- <script src="./9/high-order-functions.js"></script> -->
-    <!-- <script src="./10/sets-and-maps.js"></script> -->
-    <!-- <script src="./11/destructuring-and-spreading.js"></script> -->
-    <!--<script src="./12/regular-expressions.js"></script> -->
-    <!-- <script src="./13/console-methods.js"></script> -->
-    <!-- <script src="./14/error-handling.js"></script> -->
-    <!-- <script src="./15/classes.js"></script> -->
-    <!-- <script src="./16/json.js"></script> -->
-    <!-- <script src="./17/web-storage.js"></script> -->
-    <!-- <script src="./18/promises.js"></script> -->
-    <!-- <script src="./19/closure.js"></script> -->
-    <!-- <script src="./20/writing-clean-code.js"></script> -->
-    <!-- <script src="./21/document-object-model.js"></script> -->
-    <!-- <script src="./22/document-object-model-2.js"></script> -->
-    <!-- <script src="./23/document-object-model-3.js"></script> -->
-    <!-- <script src="./24/attributes.js"></script> -->
-    <script src="./25/attributes-2.js"></script>
-  </body>
+  <hr />
+
+  <button id="click-btn">Click me</button>
+
+  <hr>
+  <div class="tab">
+    <nav>
+      <button>tab 1</button>
+      <button>tab 2</button>
+      <button>tab 3</button>
+    </nav>
+    <div class="contents">
+      <section>content 1</section>
+      <section>content 2</section>
+      <section>content 3</section>
+    </div>
+  </div>
+
+  <script>
+    console.log("Internal Script (body)");
+  </script>
+
+  <!-- <script src="./1/introduction.js"></script> -->
+  <!-- <script src="./2/data-types.js"></script> -->
+  <!-- <script src="./3/boolean-operators-date.js"></script> -->
+  <!-- <script src="./4/conditionals.js"></script> -->
+  <!-- <script src="./5/arrays.js"></script> -->
+  <!-- <script src="./6/loops.js"></script> -->
+  <!-- <script src="./7/functions.js"></script> -->
+  <!-- <script src="./8/objects.js"></script> -->
+  <!-- <script src="./9/high-order-functions.js"></script> -->
+  <!-- <script src="./10/sets-and-maps.js"></script> -->
+  <!-- <script src="./11/destructuring-and-spreading.js"></script> -->
+  <!--<script src="./12/regular-expressions.js"></script> -->
+  <!-- <script src="./13/console-methods.js"></script> -->
+  <!-- <script src="./14/error-handling.js"></script> -->
+  <!-- <script src="./15/classes.js"></script> -->
+  <!-- <script src="./16/json.js"></script> -->
+  <!-- <script src="./17/web-storage.js"></script> -->
+  <!-- <script src="./18/promises.js"></script> -->
+  <!-- <script src="./19/closure.js"></script> -->
+  <!-- <script src="./20/writing-clean-code.js"></script> -->
+  <!-- <script src="./21/document-object-model.js"></script> -->
+  <!-- <script src="./22/document-object-model-2.js"></script> -->
+  <!-- <script src="./23/document-object-model-3.js"></script> -->
+  <!-- <script src="./24/attributes.js"></script> -->
+  <!-- <script src="./25/attributes-2.js"></script> -->
+  <script src="./26/form-elements.js"></script>
+</body>
+
 </html>
